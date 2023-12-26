@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/4d71f0cb93.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-black text-white overflow-x-hidden">
+    <div class="flex flex-row items-center w-screen">
+      <div>
+        <button class="px-2 py-2 w-10 hover:bg-slate-800">
+          <i class="fa-solid fa-bars fa-xl" style="color: #ffffff"></i>
+        </button>
+      </div>
+      <div class="flex items-center">
+        <img
+          class="w-8 h-7"
+          src="/Youtube project/assest/icons8-youtube-48.png"
+          alt="icon"
+        />
+        <p class="text-xl font-bold text-center">Youtube</p>
+      </div>
+      <div class="w-[65%] flex h-full ml-40 mt-3">
+        <input
+          class="w-[55%] h-10 rounded-s-full p-3 pt-2.5 bg-black border"
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Search"
+        />
+        <button
+          class="px-4 bg-gray-900 rounded-r-full border border-l-0 hover:bg-gray-500"
+        >
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button class="w-[54px] bg-gray-800 rounded-2xl ml-4 hover:bg-gray-500">
+          <i class="fa-solid fa-microphone"></i>
+        </button>
+      </div>
+      <div class="flex flex-row gap-10">
+        <div class="hover:bg-gray-800 cursor-pointer">
+          <i class="fa-solid fa-video fa-lg"></i>
+        </div>
+        <div class="hover:bg-gray-800 cursor-pointer relative">
+          <i class="fa-solid fa-bell fa-lg"></i>
+          <p
+            class="absolute bg-red-700 w-6 h-5.5 rounded-2xl text-center text-xs bottom-2 left-2"
+          >
+            9+
+          </p>
+        </div>
+        <div class="hover:bg-gray-800 cursor-pointer">
+          <i class="fa-solid fa-user fa-lg"></i>
+        </div>
+      </div>
+    </div>
+    <!-- --side bar-- -->
+    <div class="flex w-screen">
+      <div class="mx-3 w-[15%]">
+        <div class="my-3 hover:bg-gray-800 cursor-pointer">
+          <i class="fa-solid fa-house"></i> <span class="px-1">home</span>
+        </div>
+        <div class="flex items-center my-3 hover:bg-gray-800 cursor-pointer">
+          <img
+            class="w-4 h-5"
+            src="/Youtube project/assest/youtube-shorts-icon.png"
+            alt=""
+          />
+          <span class="px-2">shorts</span>
+        </div>
+        <div class="my-3 hover:bg-gray-800 cursor-pointer">
+          <i class="fa-solid fa-play"></i>
+          <span class="px-1">subscription</span>
+        </div>
+        <hr class="w-52" />
+        <p class="my-3 hover:bg-gray-800 cursor-pointer">
+          You <i class="fa-solid fa-angle-right px-2"></i>
+        </p>
+        <p></p>
+        <div class="my-3 hover:bg-gray-800 cursor-pointer">
+          <i class="fa-regular fa-circle-play"></i>
+          <span class="px-2">Your videos</span>
+        </div>
+        <div class="my-3 hover:bg-gray-800 cursor-pointer">
+          <i class="fa-regular fa-user"></i
+          ><span class="px-3">Your channels</span>
+        </div>
+        <div class="my-3 hover:bg-gray-800 cursor-pointer">
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <span class="px-2">Watch later</span>
+        </div>
+        <div class="my-3 hover:bg-gray-800 cursor-pointer">
+          <i class="fa-solid fa-angle-down"></i
+          ><span class="px-3">Show More</span>
+        </div>
+        <hr class="w-52" />
+        <p class="my-3 hover:bg-gray-800 cursor-pointer">Explore</p>
+        <div class="my-3 hover:bg-gray-800 cursor-pointer">
+          <i class="fa-solid fa-fire"></i><span class="px-3">Trending</span>
+        </div>
+        <div class="my-3 hover:bg-gray-800 cursor-pointer">
+          <i class="fa-solid fa-bag-shopping"></i
+          ><span class="px-3">Shopping</span>
+        </div>
+        <div class="my-3 hover:bg-gray-800 cursor-pointer">
+          <i class="fa-solid fa-music"></i><span class="px-3">Music</span>
+        </div>
+        <div class="my-3 hover:bg-gray-800 cursor-pointer">
+          <i class="fa-solid fa-film"></i><span class="px-3">Movies</span>
+        </div>
+        <div class="my-3 hover:bg-gray-800 cursor-pointer">
+          <i class="fa-solid fa-gamepad"></i><span class="px-3">Gaming</span>
+        </div>
+        <div class="my-3 hover:bg-gray-800 cursor-pointer">
+          <i class="fa-solid fa-newspaper"></i><span class="px-3">News</span>
+        </div>
+        <hr class="w-52" />
+        <p class="my-3 hover:bg-gray-800 cursor-pointer">
+          <span class="px-1">More From Youtube</span>
+        </p>
+        <div class="flex h-6 my-3 hover:bg-gray-800 cursor-pointer">
+          <img
+            src="/Youtube project/assest/icons8-youtube-studio-48.png"
+            alt=""
+          /><span class="px-2">Youtube Studio</span>
+        </div>
+        <div class="flex h-6 my-3 hover:bg-gray-800 cursor-pointer">
+          <img src="/Youtube project/assest/icons8-youtube-48.png" alt="" />
+          <span class="px-2">Youtube Premium</span>
+        </div>
+        <div class="flex h-6 my-3 hover:bg-gray-800 cursor-pointer">
+          <img
+            src="/Youtube project/assest/icons8-youtube-music-48.png"
+            alt=""
+          /><span class="px-2">Youtube Music</span>
+        </div>
+        <div class="flex h-6 my-3 hover:bg-gray-800 cursor-pointer">
+          <img
+            src="/Youtube project/assest/icons8-youtube-48 (1).png"
+            alt=""
+          /><span class="px-2">Youtube Kids</span>
+        </div>
+        <hr class="w-52" />
+        <div class="my-3 hover:bg-gray-800 cursor-pointer">
+          <i class="fa-solid fa-gear"></i><span class="px-6">Settings</span>
+        </div>
+        <div class="my-3 hover:bg-gray-800 cursor-pointer">
+          <i class="fa-solid fa-flag"></i>
+          <span class="px-5">Report History</span>
+        </div>
+        <div class="my-3 hover:bg-gray-800 cursor-pointer">
+          <i class="fa-solid fa-question"></i><span class="px-7">Help</span>
+        </div>
+        <div class="my-3 hover:bg-gray-800 cursor-pointer">
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <span class="px-4">Send Feedback</span>
+        </div>
+        <hr class="w-52" />
+        <div class="my-3 text-sm">
+          <p>
+            About Press Copyright Contactus Creators Advertise Developers Terms
+            Privacy Policy & Safety How YouTube works Test new features © 2023
+            Google LLC
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-col w-full my-3 h-10">
+        <div class="flex w-[80%] gap-5 px-8 rounded-xl">
+          <div class="">
+            <button class="bg-white text-black w-10 rounded py-1">All</button>
+          </div>
+          <div>
+            <button
+              class="bg-zinc-900 w-24 rounded py-1 px-1 hover:bg-gray-800"
+            >
+              Sports
+            </button>
+          </div>
+          <div>
+            <button
+              class="bg-zinc-900 w-24 rounded py-1 px-1 hover:bg-gray-800"
+            >
+              News
+            </button>
+          </div>
+          <div>
+            <button
+              class="bg-zinc-900 w-24 rounded py-1 px-1 hover:bg-gray-800"
+            >
+              Gaming
+            </button>
+          </div>
+          <div>
+            <button
+              class="bg-zinc-900 w-24 rounded py-1 px-1 hover:bg-gray-800"
+            >
+              Live
+            </button>
+          </div>
+          <div>
+            <button
+              class="bg-zinc-900 w-24 rounded py-1 px-1 hover:bg-gray-800"
+            >
+              Pw skills
+            </button>
+          </div>
+          <div>
+            <button
+              class="bg-zinc-900 w-24 rounded py-1 px-1 hover:bg-gray-800"
+            >
+              Music
+            </button>
+          </div>
+          <div>
+            <button
+              class="bg-zinc-900 w-24 rounded py-1 px-1 hover:bg-gray-800"
+            >
+              WWE
+            </button>
+          </div>
+          <div>
+            <button
+              class="bg-zinc-900 w-24 rounded py-1 px-1 hover:bg-gray-800"
+            >
+              Jai Jhulelal
+            </button>
+          </div>
+          <div class="">
+            <button class="py-1 px-1 hover:bg-gray-800">
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="flex flex-col h-screen px-8">
+          <div class="flex flex-wrap justify-start gap-x-10">
+            <div class="w-80 flex flex-col pt-3">
+              <div class="relative cursor-pointer">
+                <img
+                  class="rounded-md"
+                  src="/Youtube project/assest/maxresdefault.jpg"
+                  alt="edge"
+                />
+                <span
+                  class="font-bold text-white px-1 py-[1px] bg-black bg-opacity-80 text-sm rounded-md absolute right-1 bottom-1"
+                  >5:29</span
+                >
+              </div>
+              <div class="flex flex-col text-center">
+                <img
+                  class="w-8 h-8 rounded-2xl my-3 mx-1"
+                  src="/Youtube project/assest/channels4_profile.jpg"
+                  alt=""
+                />
+                <p class="relative bottom-12 left-6">
+                  "Rated R Superstar" Adam Copeland has arrived at ALL ELITE
+                  WRESTLING!
+                </p>
+                <p class="relative bottom-12 text-gray-500">
+                  All Elite Wrestling
+                  <i class="fa-solid fa-circle-check text-[0.7rem]"></i>
+                </p>
+                <p class="relative bottom-12 text text-gray-500">
+                  5.8m views . 2 months ago
+                </p>
+              </div>
+            </div>
+            <div class="w-80 flex flex-col pt-3">
+              <div class="relative cursor-pointer">
+                <img
+                  class="rounded-md"
+                  src="/Youtube project/assest/maxresdefault (4)ps.jpg"
+                  alt="edge"
+                />
+                <span
+                  class="font-bold text-white px-1 py-[1px] bg-black bg-opacity-80 text-sm rounded-md absolute right-1 bottom-1"
+                  >0:20</span
+                >
+              </div>
+              <div class="flex flex-col text-center">
+                <img
+                  class="w-8 h-8 rounded-2xl my-3 mx-1"
+                  src="/Youtube project/assest/channels4_profile (1) ps5.jpg"
+                  alt=""
+                />
+                <p class="relative bottom-12 left-6">
+                  PlayStation 5 - Same Immersive Power.
+                </p>
+                <p class="relative bottom-12 text-gray-500">
+                  Playstation
+                  <i class="fa-solid fa-circle-check text-[0.7rem]"></i>
+                </p>
+                <p class="relative bottom-12 text text-gray-500">
+                  2m views . 2 months ago
+                </p>
+              </div>
+            </div>
+            <div class="w-80 flex flex-col pt-3">
+              <div class="relative cursor-pointer">
+                <img
+                  class="rounded-md"
+                  src="/Youtube project/assest/maxresdefault (4) gta.jpg"
+                  alt="edge"
+                />
+                <span
+                  class="font-bold text-white px-1 py-[1px] bg-black bg-opacity-80 text-sm rounded-md absolute right-1 bottom-1"
+                  >5:29</span
+                >
+              </div>
+              <div class="flex flex-col text-center">
+                <img
+                  class="w-8 h-8 rounded-2xl my-3 mx-1"
+                  src="/Youtube project/assest/channels4_profile (1) gta6.jpg"
+                  alt=""
+                />
+                <p class="relative bottom-12 left-6">
+                  Grand Theft Auto VI Trailer 1
+                </p>
+                <p class="relative bottom-12 text-gray-500">
+                  Rockstar Games
+                  <i class="fa-solid fa-circle-check text-[0.7rem]"></i>
+                </p>
+                <p class="relative bottom-12 text text-gray-500">
+                  150m views . 11 Days ago
+                </p>
+              </div>
+            </div>
+            <div class="w-80 flex flex-col pt-3">
+              <div class="relative cursor-pointer">
+                <img
+                  class="rounded-md"
+                  src="/Youtube project/assest/maxresdefault (1).jpg"
+                  alt="edge"
+                />
+                <span
+                  class="font-bold text-white px-1 py-[1px] bg-black bg-opacity-80 text-sm rounded-md absolute right-1 bottom-1"
+                  >3:26</span
+                >
+              </div>
+              <div class="flex flex-col text-center">
+                <img
+                  class="w-8 h-8 rounded-2xl my-3 mr-4"
+                  src="/Youtube project/assest/1d.jpg"
+                  alt=""
+                />
+                <p class="relative bottom-12 left-5">
+                  One Direction - What Makes You Beautiful (Official Video)
+                </p>
+                <p class="relative bottom-12 text-gray-500">
+                  One Direction
+                  <i class="fa-solid fa-circle-check text-[0.7rem]"></i>
+                </p>
+                <p class="relative bottom-12 text text-gray-500">
+                  1.4b views . 12 Years ago
+                </p>
+              </div>
+            </div>
+            <div class="w-80 flex flex-col pt-3">
+              <div class="relative cursor-pointer">
+                <img
+                  class="rounded-md"
+                  src="/Youtube project/assest/maxresdefault (2).jpg"
+                  alt="edge"
+                />
+                <span
+                  class="font-bold text-white px-1 py-[1px] bg-black bg-opacity-80 text-sm rounded-md absolute right-1 bottom-1"
+                  >6:48</span
+                >
+              </div>
+              <div class="flex flex-col text-center">
+                <img
+                  class="w-8 h-8 rounded-2xl my-3 mr-3"
+                  src="/Youtube project/assest/sindhi.jpg"
+                  alt=""
+                />
+                <p class="relative bottom-12 left-5 px-3">
+                  Papa Jo Happy Birthday x Staycation Idea Sindhi Comedy
+                </p>
+                <p class="relative bottom-12 text-gray-500">
+                  Sindhionism
+                  <i class="fa-solid fa-circle-check text-[0.7rem]"></i>
+                </p>
+                <p class="relative bottom-12 text text-gray-500">
+                  156k views . 1 Year ago
+                </p>
+              </div>
+            </div>
+            <div class="w-80 flex flex-col pt-3">
+              <div class="relative cursor-pointer">
+                <img
+                  class="rounded-md"
+                  src="/Youtube project/assest/maxresdefault (3).jpg"
+                  alt="edge"
+                />
+                <span
+                  class="font-bold text-white px-1 py-[1px] bg-black bg-opacity-80 text-sm rounded-md absolute right-1 bottom-1"
+                  >18:37</span
+                >
+              </div>
+              <div class="flex flex-col text-center">
+                <img
+                  class="w-8 h-8 rounded-2xl my-3 mx-1"
+                  src="/Youtube project/assest/channels4_profile (1) tmkoc.jpg"
+                  alt=""
+                />
+                <p class="relative bottom-12 left-6">
+                  Episode 583 - Taarak Mehta Ka Ooltah Chashmah - Full Episode
+                </p>
+                <p class="relative bottom-12 text-gray-500">
+                  Taarak Mehta Ka Ooltah Chashmah
+                  <i class="fa-solid fa-circle-check text-[0.7rem]"></i>
+                </p>
+                <p class="relative bottom-12 text text-gray-500">
+                  8.3m views . 1 year ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
